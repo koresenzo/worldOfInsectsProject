@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffed;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.wasp-image {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border: 5px solid #ffc107; /* Yellow border */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.annotations {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.annotation {
+    background-color: #ffc107; /* Yellow background */
+    color: #333; /* Dark text color */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px; /* Rounded corners */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
